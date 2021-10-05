@@ -1,10 +1,9 @@
 import { Client, Intents } from 'discord.js';
-import ConfigJson from '../config.json';
-import IConfig from '../Interfaces/Config';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 class UBot extends Client {
-  public config: IConfig = ConfigJson;
-
   public constructor() {
     super({
       intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
@@ -12,7 +11,7 @@ class UBot extends Client {
   }
 
   public async init(): Promise<void> {
-    this.login(this.config.token);
+    this.login(process.env.TOKEN);
 
     this.on('ready', () => {
       console.log("I'm ready!!");
