@@ -1682,6 +1682,21 @@ mongodb@4.1.2:
   optionalDependencies:
     saslprep "^1.0.3"
 
+mongoose@^6.0.10:
+  version "6.0.10"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.0.10.tgz#c22ac914afccf648778edfe11954f4aa0425a105"
+  integrity sha512-p/wiEDUXoQuyb/xQx8QW/YGN92ZsojJ5E/DDgMCUU0WOGxc5uhcWoZ7ijLu6Ssjq8UkwVSv+jzkYp4Wbr+NqBg==
+  dependencies:
+    bson "^4.2.2"
+    kareem "2.3.2"
+    mongodb "4.1.2"
+    mpath "0.8.4"
+    mquery "4.0.0"
+    ms "2.1.2"
+    regexp-clone "1.0.0"
+    sift "13.5.2"
+    sliced "1.0.1"
+
 mongoose@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.0.9.tgz#833a300f515dc17fb88850f5f89753ec69623411"
@@ -2614,6 +2629,15 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+wokcommands@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/wokcommands/-/wokcommands-1.5.1.tgz#9d902495c54e3c33e2842820de351f600a04b081"
+  integrity sha512-T0eIdR9K+HHLmm3+F0kM+qTKUwGs0aobSsJ+Q3r5EDiYf7/gEelG39Hdj1qzH3rERJxrSd/2OUXasJyoGCgCBQ==
+  dependencies:
+    discord.js "^13.1.0"
+    dotenv "^8.2.0"
+    mongoose "^6.0.10"
 
 word-wrap@^1.2.3:
   version "1.2.3"
